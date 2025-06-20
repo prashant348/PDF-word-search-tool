@@ -12,8 +12,6 @@ pdf_path = filedialog.askopenfilename(title="Select PDF file", filetypes=[("PDF 
 print(f"Selected PDF file: {pdf_path}")
                   
 # PyPDF2 library method that reads the pdf: 
-# input_file_name = input("Enter the name of the PDF file (with .pdf extension): ")
-# input_file_path = f"C:\\Users\\pc\\Downloads\\Note_Taking_app\\{input_file_name}"
 
 input_file = open(pdf_path, 'rb')
 pdf_reader = p.PdfReader(input_file)
@@ -30,16 +28,10 @@ with open(output_file_path, "w", encoding="utf-8") as f:
 
 input_file.close()
 
-# with open("C:\\Users\\pc\\Downloads\\PYTHON_PROJECTS\\output.txt", "w", encoding="utf-8") as f:
-#     f.write(pdf_text)
 
-# input_file.close()
 # # word search
 
 input_word = input("Enter the word you want to search for: ")
-
-# with open("C:\\Users\\pc\\Downloads\\PYTHON_PROJECTS\\output.txt", "r", encoding="utf-8") as f:
-#     content_pdf_text = f.readlines()
 
 found = False
 
